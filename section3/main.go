@@ -66,6 +66,31 @@ func main() {
 	nan := zero / zero
 	fmt.Println(pinf, ninf, nan) // +Inf(正の無限大), -Inf(負の無限大), NaN(非数)
 
+	// 論理値形
+	var boolT,boolF bool = true, false
+	fmt.Println("論理値型", boolT, boolF)
+	// 文字列型 ダブルクォート必須。
+	var sString string = "はろはろ～"
+	fmt.Println("文字列型", sString)
+	fmt.Printf("%T\n", sString)
+	var s300 string = "200"
+	fmt.Println("文字列型", s300)
+	fmt.Printf("%T\n", s300)
+	// 複数行はバッククォート
+	fmt.Println(`test
+	test 
+	test`)
+	// ダブルクォートを出す
+	fmt.Println("\"")
+	fmt.Println(`"`)
+	// 文字列を[0]で出すとその中身ではなくバイト配列。また全角文字でやると復元されない。
+	var sString2 string = "Hello"
+	fmt.Println("文字列を取り出すよ ", sString2[0]) // 72
+	fmt.Println("文字列を取り出すよ string()で囲う ", string(sString2[0])) // H
+
+
+
+
 }
 
 
