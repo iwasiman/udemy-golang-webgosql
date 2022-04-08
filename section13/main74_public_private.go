@@ -10,7 +10,7 @@ import (
 //"./foo"
 // main74_public_private.go:7:2: "./foo" is relative, but relative import paths are not supported in module mode
 
-// 単に”foo” だと、$GOROOTや$GOHOMEの下しか見ない模様。
+// 単に”foo” だと、$GOROOTや$GOHOMEの下しか見ない模様。→ go modules を使えば解決する。
 
 func appName() string {
 	const AppName = "Iketenai-main"
